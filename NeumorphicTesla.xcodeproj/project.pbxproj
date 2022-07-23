@@ -9,21 +9,36 @@
 /* Begin PBXBuildFile section */
 		B16905752881BFC800A6C34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905742881BFC800A6C34C /* AppDelegate.swift */; };
 		B16905772881BFC800A6C34C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905762881BFC800A6C34C /* SceneDelegate.swift */; };
-		B16905792881BFC800A6C34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905782881BFC800A6C34C /* ViewController.swift */; };
+		B16905792881BFC800A6C34C /* LockCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905782881BFC800A6C34C /* LockCarController.swift */; };
 		B169057C2881BFC800A6C34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B169057A2881BFC800A6C34C /* Main.storyboard */; };
 		B169057E2881BFC900A6C34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B169057D2881BFC900A6C34C /* Assets.xcassets */; };
 		B16905812881BFC900A6C34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B169057F2881BFC900A6C34C /* LaunchScreen.storyboard */; };
+		B169058F2881C4A000A6C34C /* ExtensionGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B169058E2881C4A000A6C34C /* ExtensionGradient.swift */; };
+		B16905912881C58B00A6C34C /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905902881C58B00A6C34C /* ExtensionUIColor.swift */; };
+		B1F112EB2881C7A200886909 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B1F112EA2881C7A200886909 /* SnapKit */; };
+		B1F113072884494D00886909 /* CustomTabBarVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F113062884494D00886909 /* CustomTabBarVc.swift */; };
+		B1F1130A28844E7500886909 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1130928844E7500886909 /* TabBarVC.swift */; };
+		B1F1130F2884928600886909 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1130E2884928600886909 /* CarViewController.swift */; };
+		B1F11311288498D700886909 /* ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F11310288498D700886909 /* ChargeViewController.swift */; };
+		B1F113132884B72000886909 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F113122884B72000886909 /* OptionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B16905712881BFC800A6C34C /* NeumorphicTesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeumorphicTesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16905742881BFC800A6C34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16905762881BFC800A6C34C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B16905782881BFC800A6C34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B16905782881BFC800A6C34C /* LockCarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockCarController.swift; sourceTree = "<group>"; };
 		B169057B2881BFC800A6C34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B169057D2881BFC900A6C34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16905802881BFC900A6C34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B16905822881BFC900A6C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B169058E2881C4A000A6C34C /* ExtensionGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGradient.swift; sourceTree = "<group>"; };
+		B16905902881C58B00A6C34C /* ExtensionUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
+		B1F113062884494D00886909 /* CustomTabBarVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVc.swift; sourceTree = "<group>"; };
+		B1F1130928844E7500886909 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		B1F1130E2884928600886909 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		B1F11310288498D700886909 /* ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeViewController.swift; sourceTree = "<group>"; };
+		B1F113122884B72000886909 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F112EB2881C7A200886909 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,62 @@
 		B16905732881BFC800A6C34C /* NeumorphicTesla */ = {
 			isa = PBXGroup;
 			children = (
+				B1F1130B2884925100886909 /* LockUnlockController */,
+				B1F1130C2884925E00886909 /* MainControllers */,
+				B169058D2881C48B00A6C34C /* GradientExtension */,
 				B16905742881BFC800A6C34C /* AppDelegate.swift */,
 				B16905762881BFC800A6C34C /* SceneDelegate.swift */,
-				B16905782881BFC800A6C34C /* ViewController.swift */,
+				B1F1130828844E5600886909 /* TabBaar */,
 				B169057A2881BFC800A6C34C /* Main.storyboard */,
 				B169057D2881BFC900A6C34C /* Assets.xcassets */,
 				B169057F2881BFC900A6C34C /* LaunchScreen.storyboard */,
 				B16905822881BFC900A6C34C /* Info.plist */,
 			);
 			path = NeumorphicTesla;
+			sourceTree = "<group>";
+		};
+		B169058D2881C48B00A6C34C /* GradientExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B169058E2881C4A000A6C34C /* ExtensionGradient.swift */,
+				B16905902881C58B00A6C34C /* ExtensionUIColor.swift */,
+			);
+			path = GradientExtension;
+			sourceTree = "<group>";
+		};
+		B1F1130828844E5600886909 /* TabBaar */ = {
+			isa = PBXGroup;
+			children = (
+				B1F113062884494D00886909 /* CustomTabBarVc.swift */,
+				B1F1130928844E7500886909 /* TabBarVC.swift */,
+			);
+			path = TabBaar;
+			sourceTree = "<group>";
+		};
+		B1F1130B2884925100886909 /* LockUnlockController */ = {
+			isa = PBXGroup;
+			children = (
+				B16905782881BFC800A6C34C /* LockCarController.swift */,
+			);
+			path = LockUnlockController;
+			sourceTree = "<group>";
+		};
+		B1F1130C2884925E00886909 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1130D2884926B00886909 /* CarController */,
+				B1F11310288498D700886909 /* ChargeViewController.swift */,
+			);
+			path = MainControllers;
+			sourceTree = "<group>";
+		};
+		B1F1130D2884926B00886909 /* CarController */ = {
+			isa = PBXGroup;
+			children = (
+				B1F1130E2884928600886909 /* CarViewController.swift */,
+				B1F113122884B72000886909 /* OptionTableViewCell.swift */,
+			);
+			path = CarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,9 @@
 			dependencies = (
 			);
 			name = NeumorphicTesla;
+			packageProductDependencies = (
+				B1F112EA2881C7A200886909 /* SnapKit */,
+			);
 			productName = NeumorphicTesla;
 			productReference = B16905712881BFC800A6C34C /* NeumorphicTesla.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +177,9 @@
 				Base,
 			);
 			mainGroup = B16905682881BFC800A6C34C;
+			packageReferences = (
+				B1F112E92881C7A200886909 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = B16905722881BFC800A6C34C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +207,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16905792881BFC800A6C34C /* ViewController.swift in Sources */,
+				B1F1130A28844E7500886909 /* TabBarVC.swift in Sources */,
+				B1F11311288498D700886909 /* ChargeViewController.swift in Sources */,
+				B16905792881BFC800A6C34C /* LockCarController.swift in Sources */,
+				B1F113072884494D00886909 /* CustomTabBarVc.swift in Sources */,
+				B169058F2881C4A000A6C34C /* ExtensionGradient.swift in Sources */,
 				B16905752881BFC800A6C34C /* AppDelegate.swift in Sources */,
+				B16905912881C58B00A6C34C /* ExtensionUIColor.swift in Sources */,
 				B16905772881BFC800A6C34C /* SceneDelegate.swift in Sources */,
+				B1F113132884B72000886909 /* OptionTableViewCell.swift in Sources */,
+				B1F1130F2884928600886909 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,8 +371,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,8 +401,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1F112E92881C7A200886909 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1F112EA2881C7A200886909 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1F112E92881C7A200886909 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B16905692881BFC800A6C34C /* Project object */;
 }
