@@ -8,12 +8,16 @@
 import UIKit
 import CoreGraphics
 import SnapKit
+import AVFoundation
 
 class LockCarController: UIViewController {
     
   
     
-  
+
+    @IBAction func unwindToLock(_ segue: UIStoryboardSegue){
+        
+    }
 
     @IBOutlet weak var lockView: UIView!
     let darkShadow = CALayer()
@@ -57,6 +61,21 @@ class LockCarController: UIViewController {
 
         
         
+    }
+    var player: AVAudioPlayer?
+
+    func playSound() {
+        guard let path = Bundle.main.path(forResource: "unlockCar", ofType:"wav") else {
+            return }
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     let carLockImage = UIImageView(image: UIImage(named: "lockCar"))
     private func setupGestures(){
@@ -114,6 +133,7 @@ class LockCarController: UIViewController {
         whiteView.alpha = 0
         whiteView.backgroundColor = .white
         view.insertSubview(whiteView, at: 5)
+        playSound()
         UIView.animate(withDuration: 0.7, delay: 0.2, options: .allowAnimatedContent) {
             whiteView.alpha = 1
             whiteView.frame = CGRect(x: 0, y: 0, width: 1200, height: 1200)

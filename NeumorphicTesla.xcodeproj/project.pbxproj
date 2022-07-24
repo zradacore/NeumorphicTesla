@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12C1A7E288C2C5D00905039 /* ClimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C1A7D288C2C5D00905039 /* ClimateViewController.swift */; };
 		B16905752881BFC800A6C34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905742881BFC800A6C34C /* AppDelegate.swift */; };
 		B16905772881BFC800A6C34C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905762881BFC800A6C34C /* SceneDelegate.swift */; };
 		B16905792881BFC800A6C34C /* LockCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16905782881BFC800A6C34C /* LockCarController.swift */; };
@@ -21,9 +22,15 @@
 		B1F1130F2884928600886909 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F1130E2884928600886909 /* CarViewController.swift */; };
 		B1F11311288498D700886909 /* ChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F11310288498D700886909 /* ChargeViewController.swift */; };
 		B1F113132884B72000886909 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F113122884B72000886909 /* OptionTableViewCell.swift */; };
+		B1F57B40288C5CB400D35AD7 /* unlockCar.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1F57B3F288C5CB400D35AD7 /* unlockCar.wav */; };
+		B1F57B42288C5EC300D35AD7 /* openBagage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B1F57B41288C5EC300D35AD7 /* openBagage.mp3 */; };
+		B1F57B44288C5EFD00D35AD7 /* closeBagaje.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1F57B43288C5EFD00D35AD7 /* closeBagaje.wav */; };
+		B1F57B46288C635100D35AD7 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F57B45288C635100D35AD7 /* PlainCircularProgressBar.swift */; };
+		B1F57B48288C805400D35AD7 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F57B47288C805400D35AD7 /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B12C1A7D288C2C5D00905039 /* ClimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateViewController.swift; sourceTree = "<group>"; };
 		B16905712881BFC800A6C34C /* NeumorphicTesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeumorphicTesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16905742881BFC800A6C34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16905762881BFC800A6C34C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +46,11 @@
 		B1F1130E2884928600886909 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		B1F11310288498D700886909 /* ChargeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeViewController.swift; sourceTree = "<group>"; };
 		B1F113122884B72000886909 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		B1F57B3F288C5CB400D35AD7 /* unlockCar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = unlockCar.wav; sourceTree = "<group>"; };
+		B1F57B41288C5EC300D35AD7 /* openBagage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = openBagage.mp3; sourceTree = "<group>"; };
+		B1F57B43288C5EFD00D35AD7 /* closeBagaje.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = closeBagaje.wav; sourceTree = "<group>"; };
+		B1F57B45288C635100D35AD7 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
+		B1F57B47288C805400D35AD7 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B12C1A78288C18A000905039 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B16905742881BFC800A6C34C /* AppDelegate.swift */,
+				B16905762881BFC800A6C34C /* SceneDelegate.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B16905682881BFC800A6C34C = {
 			isa = PBXGroup;
 			children = (
@@ -72,11 +93,15 @@
 		B16905732881BFC800A6C34C /* NeumorphicTesla */ = {
 			isa = PBXGroup;
 			children = (
+				B1F57B45288C635100D35AD7 /* PlainCircularProgressBar.swift */,
+				B1F57B47288C805400D35AD7 /* CustomSlider.swift */,
+				B1F57B41288C5EC300D35AD7 /* openBagage.mp3 */,
+				B1F57B3F288C5CB400D35AD7 /* unlockCar.wav */,
+				B1F57B43288C5EFD00D35AD7 /* closeBagaje.wav */,
+				B12C1A78288C18A000905039 /* Services */,
 				B1F1130B2884925100886909 /* LockUnlockController */,
 				B1F1130C2884925E00886909 /* MainControllers */,
 				B169058D2881C48B00A6C34C /* GradientExtension */,
-				B16905742881BFC800A6C34C /* AppDelegate.swift */,
-				B16905762881BFC800A6C34C /* SceneDelegate.swift */,
 				B1F1130828844E5600886909 /* TabBaar */,
 				B169057A2881BFC800A6C34C /* Main.storyboard */,
 				B169057D2881BFC900A6C34C /* Assets.xcassets */,
@@ -124,6 +149,7 @@
 		B1F1130D2884926B00886909 /* CarController */ = {
 			isa = PBXGroup;
 			children = (
+				B12C1A7D288C2C5D00905039 /* ClimateViewController.swift */,
 				B1F1130E2884928600886909 /* CarViewController.swift */,
 				B1F113122884B72000886909 /* OptionTableViewCell.swift */,
 			);
@@ -195,7 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16905812881BFC900A6C34C /* LaunchScreen.storyboard in Resources */,
+				B1F57B44288C5EFD00D35AD7 /* closeBagaje.wav in Resources */,
 				B169057E2881BFC900A6C34C /* Assets.xcassets in Resources */,
+				B1F57B40288C5CB400D35AD7 /* unlockCar.wav in Resources */,
+				B1F57B42288C5EC300D35AD7 /* openBagage.mp3 in Resources */,
 				B169057C2881BFC800A6C34C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,10 +240,13 @@
 				B1F11311288498D700886909 /* ChargeViewController.swift in Sources */,
 				B16905792881BFC800A6C34C /* LockCarController.swift in Sources */,
 				B1F113072884494D00886909 /* CustomTabBarVc.swift in Sources */,
+				B1F57B46288C635100D35AD7 /* PlainCircularProgressBar.swift in Sources */,
 				B169058F2881C4A000A6C34C /* ExtensionGradient.swift in Sources */,
 				B16905752881BFC800A6C34C /* AppDelegate.swift in Sources */,
 				B16905912881C58B00A6C34C /* ExtensionUIColor.swift in Sources */,
 				B16905772881BFC800A6C34C /* SceneDelegate.swift in Sources */,
+				B12C1A7E288C2C5D00905039 /* ClimateViewController.swift in Sources */,
+				B1F57B48288C805400D35AD7 /* CustomSlider.swift in Sources */,
 				B1F113132884B72000886909 /* OptionTableViewCell.swift in Sources */,
 				B1F1130F2884928600886909 /* CarViewController.swift in Sources */,
 			);

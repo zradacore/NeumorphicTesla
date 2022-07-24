@@ -7,15 +7,15 @@
 
 import UIKit
 import SnapKit
+import AVFoundation
 
 class CarViewController: UIViewController {
     
-    
+    let appDelegate = UIApplication.shared.delegate as? AppDelegate
     @IBOutlet weak var contentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupGradient()
         createLeftLabel()
         setupProfileButton()
@@ -23,8 +23,7 @@ class CarViewController: UIViewController {
         setupHorizontalActionView()
         setupTableView()
     }
-    
-    
+  
     func setupGradient(){
         let gradient = CAGradientLayer()
         gradient.colors = [
@@ -38,6 +37,7 @@ class CarViewController: UIViewController {
         gradient.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         gradient.position = view.center
         view.layer.insertSublayer(gradient, at: 0)
+        
        }
     
     let teslaLabel : UILabel = {
@@ -76,6 +76,7 @@ class CarViewController: UIViewController {
         profileButton.addTarget(self, action: #selector(profileTapped), for: .touchUpInside)
         self.view.layoutIfNeeded()
     }
+    
     @objc func profileTapped(sender: UIButton){
         print("profile tapped")
     }
@@ -93,13 +94,13 @@ class CarViewController: UIViewController {
     }
     
     let actionHorView = UIView()
+    
     let darkShadow : CALayer = {
         let darkShadow = CALayer()
         darkShadow.shadowColor = UIColor.black.cgColor
         darkShadow.shadowOffset = CGSize(width: 10, height: 0)
         darkShadow.shadowOpacity = 1
         darkShadow.shadowRadius = 50
-      
         return darkShadow
     }()
     var whiteShadow = CALayer()
@@ -116,10 +117,14 @@ class CarViewController: UIViewController {
             make.leading.equalToSuperview().inset(30)
             make.height.equalTo(104)
         }
+        //climateSegue
+        climateButton.addTarget(self, action: #selector(climateTapped(_ :)), for: .touchUpInside)
+        openButton.addTarget(self, action: #selector(openBagaje(_ :)), for: .touchUpInside)
+        openButton.tag = 10
         actionHorView.layer.cornerRadius = 50
         actionHorView.backgroundColor = UIColor(red: 0.153, green: 0.157, blue: 0.165, alpha: 1)
         actionHorView.translatesAutoresizingMaskIntoConstraints = false
-        
+        lockButton.addTarget(self, action: #selector(lockCar(_ :)), for: .touchUpInside)
         actionHorView.layer.insertSublayer(whiteShadow, at: 0)
         whiteShadow.masksToBounds = false
         whiteShadow.shadowColor = UIColor.white.cgColor
@@ -130,7 +135,7 @@ class CarViewController: UIViewController {
         whiteShadow.shouldRasterize = true
         whiteShadow.rasterizationScale = true ? UIScreen.main.scale : 1
         whiteShadow.frame = actionHorView.bounds
-        openButton.setImage(UIImage(named: "open"), for: .normal)
+        openButton.setImage(UIImage(named: "bagageClose"), for: .normal)
         lockButton.setImage(UIImage(named: "lock"), for: .normal)
         chargeButton.setImage(UIImage(named: "charge"), for: .normal)
         climateButton.setImage(UIImage(named: "climate"), for: .normal)
@@ -163,10 +168,40 @@ class CarViewController: UIViewController {
             make.bottom.equalTo(actionHorView).inset(20)
             make.height.equalTo(44)
         }
+        
         stackView.addArrangedSubview(lockButton)
         stackView.addArrangedSubview(climateButton)
         stackView.addArrangedSubview(chargeButton)
         stackView.addArrangedSubview(openButton)
+    }
+    
+    @objc
+    func climateTapped(_ sender : UIButton){
+        performSegue(withIdentifier: "climateSegue", sender: self)
+    }
+    
+    //MARK: - Lock Car Button Action
+    @objc
+    func lockCar(_ sender : UIButton){
+        performSegue(withIdentifier: "backLockCarSegue", sender: self)
+    }
+    
+    
+    //MARK: - Open bagage car or close
+    @objc
+    func openBagaje(_ sender : UIButton){
+        switch sender.tag{
+        case 10:
+            sender.setImage(UIImage(named: "open"), for: .normal)
+            sender.tag = 11
+            self.appDelegate?.scheduleNotification(notificationType: "Успешно", soundName: "openBagage.mp3", text: "Ваш багажник открыт")
+        default:
+            sender.setImage(UIImage(named: "bagageClose"), for: .normal)
+            sender.tag = 10
+            self.appDelegate?.scheduleNotification(notificationType: "Успешно", soundName: "closeBagaje.wav", text: "Ваш багажник закрыт")
+        }
+     
+       
     }
     
     @IBOutlet weak var tableView: UITableView!
